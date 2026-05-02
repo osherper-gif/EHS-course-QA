@@ -1,0 +1,4968 @@
+[
+  {
+    "id": "TC-AUTH-001",
+    "title": "טעינת תרחיש בסיסית - משתמש מאושר יכול להיכנס לאתר",
+    "requirementIds": [
+      "REQ-AUTH-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-002",
+    "title": "בדיקת הרשאה/גישה - משתמש מאושר יכול להיכנס לאתר",
+    "requirementIds": [
+      "REQ-AUTH-001"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-003",
+    "title": "בדיקת הרשאה/גישה - משתמש לא מחובר מופנה למסך התחברות",
+    "requirementIds": [
+      "REQ-AUTH-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-004",
+    "title": "בדיקת מובייל - משתמש לא מחובר מופנה למסך התחברות",
+    "requirementIds": [
+      "REQ-AUTH-002"
+    ],
+    "type": "Security",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-005",
+    "title": "בדיקת מובייל - משתמש חסום אינו רואה תוכן",
+    "requirementIds": [
+      "REQ-AUTH-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-006",
+    "title": "בדיקת טקסטים וכותרות - משתמש חסום אינו רואה תוכן",
+    "requirementIds": [
+      "REQ-AUTH-003"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-007",
+    "title": "בדיקת טקסטים וכותרות - משתמש pending מקבל הודעה ברורה",
+    "requirementIds": [
+      "REQ-AUTH-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-008",
+    "title": "בדיקת פעולה מרכזית - משתמש pending מקבל הודעה ברורה",
+    "requirementIds": [
+      "REQ-AUTH-004"
+    ],
+    "type": "Mobile",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-009",
+    "title": "בדיקת פעולה מרכזית - התנתקות מנקה session מקומי",
+    "requirementIds": [
+      "REQ-AUTH-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-AUTH-010",
+    "title": "בדיקת כשל ידידותי - התנתקות מנקה session מקומי",
+    "requirementIds": [
+      "REQ-AUTH-005"
+    ],
+    "type": "UI",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-011",
+    "title": "בדיקת כשל ידידותי - רק אדמין רואה קישורי ניהול",
+    "requirementIds": [
+      "REQ-ADMIN-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-012",
+    "title": "בדיקת קישורים - רק אדמין רואה קישורי ניהול",
+    "requirementIds": [
+      "REQ-ADMIN-001"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-013",
+    "title": "בדיקת קישורים - admin.html חסום למשתמש רגיל",
+    "requirementIds": [
+      "REQ-ADMIN-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-014",
+    "title": "בדיקת שמירת מצב - admin.html חסום למשתמש רגיל",
+    "requirementIds": [
+      "REQ-ADMIN-002"
+    ],
+    "type": "Security",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-015",
+    "title": "בדיקת שמירת מצב - אדמין יכול לראות משתמשים",
+    "requirementIds": [
+      "REQ-ADMIN-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-016",
+    "title": "טעינת תרחיש בסיסית - אדמין יכול לראות משתמשים",
+    "requirementIds": [
+      "REQ-ADMIN-003"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-017",
+    "title": "טעינת תרחיש בסיסית - אדמין יכול לנהל דיווחי תקלה",
+    "requirementIds": [
+      "REQ-ADMIN-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-018",
+    "title": "בדיקת הרשאה/גישה - אדמין יכול לנהל דיווחי תקלה",
+    "requirementIds": [
+      "REQ-ADMIN-004"
+    ],
+    "type": "Mobile",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-019",
+    "title": "בדיקת הרשאה/גישה - אדמין יכול לראות גרסאות אתר",
+    "requirementIds": [
+      "REQ-ADMIN-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-ADMIN-020",
+    "title": "בדיקת מובייל - אדמין יכול לראות גרסאות אתר",
+    "requirementIds": [
+      "REQ-ADMIN-005"
+    ],
+    "type": "UI",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-021",
+    "title": "בדיקת מובייל - Bottom navigation מוצג במובייל",
+    "requirementIds": [
+      "REQ-MOB-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-022",
+    "title": "בדיקת טקסטים וכותרות - Bottom navigation מוצג במובייל",
+    "requirementIds": [
+      "REQ-MOB-001"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-023",
+    "title": "בדיקת טקסטים וכותרות - אין מסך לבן במובייל",
+    "requirementIds": [
+      "REQ-MOB-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-024",
+    "title": "בדיקת פעולה מרכזית - אין מסך לבן במובייל",
+    "requirementIds": [
+      "REQ-MOB-002"
+    ],
+    "type": "Security",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-025",
+    "title": "בדיקת פעולה מרכזית - כפתורי מגע בגודל מינימלי",
+    "requirementIds": [
+      "REQ-MOB-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-026",
+    "title": "בדיקת כשל ידידותי - כפתורי מגע בגודל מינימלי",
+    "requirementIds": [
+      "REQ-MOB-003"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-027",
+    "title": "בדיקת כשל ידידותי - עמודי שיעור קריאים במובייל",
+    "requirementIds": [
+      "REQ-MOB-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-028",
+    "title": "בדיקת קישורים - עמודי שיעור קריאים במובייל",
+    "requirementIds": [
+      "REQ-MOB-004"
+    ],
+    "type": "Mobile",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-029",
+    "title": "בדיקת קישורים - טבלאות אדמין הופכות לכרטיסים",
+    "requirementIds": [
+      "REQ-MOB-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-MOB-030",
+    "title": "בדיקת שמירת מצב - טבלאות אדמין הופכות לכרטיסים",
+    "requirementIds": [
+      "REQ-MOB-005"
+    ],
+    "type": "UI",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/mobile.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LESSON-031",
+    "title": "בדיקת שמירת מצב - כל שיעור נטען בהצלחה",
+    "requirementIds": [
+      "REQ-LESSON-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LESSON-032",
+    "title": "טעינת תרחיש בסיסית - שיעור כולל כותרת H1",
+    "requirementIds": [
+      "REQ-LESSON-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LESSON-033",
+    "title": "בדיקת הרשאה/גישה - שאלות שיעור מוצגות לפי שיעור",
+    "requirementIds": [
+      "REQ-LESSON-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LESSON-034",
+    "title": "בדיקת מובייל - קישורי ראה גם תקינים",
+    "requirementIds": [
+      "REQ-LESSON-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LESSON-035",
+    "title": "בדיקת טקסטים וכותרות - הערות אישיות נשמרות מקומית",
+    "requirementIds": [
+      "REQ-LESSON-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-EXAM-036",
+    "title": "בדיקת פעולה מרכזית - עמוד תרגול נטען",
+    "requirementIds": [
+      "REQ-EXAM-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/quizzes.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-EXAM-037",
+    "title": "בדיקת כשל ידידותי - מבחן מתחיל בלחיצה",
+    "requirementIds": [
+      "REQ-EXAM-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/quizzes.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-EXAM-038",
+    "title": "בדיקת קישורים - שאלה מוצגת עם ארבע תשובות",
+    "requirementIds": [
+      "REQ-EXAM-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/quizzes.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-EXAM-039",
+    "title": "בדיקת שמירת מצב - ציון מוצג בסיום",
+    "requirementIds": [
+      "REQ-EXAM-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/quizzes.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-EXAM-040",
+    "title": "טעינת תרחיש בסיסית - ניסיון חוזר מערבב שאלות",
+    "requirementIds": [
+      "REQ-EXAM-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/quizzes.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-GAME-041",
+    "title": "בדיקת הרשאה/גישה - עמוד אתגר בטיחות נטען",
+    "requirementIds": [
+      "REQ-GAME-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/safety-game.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-GAME-042",
+    "title": "בדיקת מובייל - בחירת רמת קושי נשמרת",
+    "requirementIds": [
+      "REQ-GAME-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/safety-game.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-GAME-043",
+    "title": "בדיקת טקסטים וכותרות - שלב ראשון ניתן להתחלה",
+    "requirementIds": [
+      "REQ-GAME-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/safety-game.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-GAME-044",
+    "title": "בדיקת פעולה מרכזית - ניקוד XP מחושב",
+    "requirementIds": [
+      "REQ-GAME-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/safety-game.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-GAME-045",
+    "title": "בדיקת כשל ידידותי - טעויות נשמרות לחזרה",
+    "requirementIds": [
+      "REQ-GAME-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/safety-game.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-FDBK-046",
+    "title": "בדיקת קישורים - כפתור דיווח תקלה זמין למשתמש מחובר",
+    "requirementIds": [
+      "REQ-FDBK-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/feedback.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-FDBK-047",
+    "title": "בדיקת שמירת מצב - טופס דיווח נפתח",
+    "requirementIds": [
+      "REQ-FDBK-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/feedback.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-FDBK-048",
+    "title": "טעינת תרחיש בסיסית - שדות חובה מאומתים",
+    "requirementIds": [
+      "REQ-FDBK-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/feedback.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-FDBK-049",
+    "title": "בדיקת הרשאה/גישה - כשל Firestore נשמר ב-localStorage",
+    "requirementIds": [
+      "REQ-FDBK-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/feedback.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-FDBK-050",
+    "title": "בדיקת מובייל - mailto זמין כחלופה",
+    "requirementIds": [
+      "REQ-FDBK-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/feedback.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-A11Y-051",
+    "title": "בדיקת טקסטים וכותרות - html כולל lang he ו-dir rtl",
+    "requirementIds": [
+      "REQ-A11Y-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-A11Y-052",
+    "title": "בדיקת פעולה מרכזית - קישור דלג לתוכן קיים",
+    "requirementIds": [
+      "REQ-A11Y-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-A11Y-053",
+    "title": "בדיקת כשל ידידותי - לכל עמוד H1 יחיד",
+    "requirementIds": [
+      "REQ-A11Y-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-A11Y-054",
+    "title": "בדיקת קישורים - טפסים כוללים labels",
+    "requirementIds": [
+      "REQ-A11Y-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-A11Y-055",
+    "title": "בדיקת שמירת מצב - Focus visible ברור",
+    "requirementIds": [
+      "REQ-A11Y-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LEGAL-056",
+    "title": "טעינת תרחיש בסיסית - מדיניות פרטיות נגישה מהפוטר",
+    "requirementIds": [
+      "REQ-LEGAL-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LEGAL-057",
+    "title": "בדיקת הרשאה/גישה - תנאי שימוש נגישה מהפוטר",
+    "requirementIds": [
+      "REQ-LEGAL-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LEGAL-058",
+    "title": "בדיקת מובייל - הצהרת אחריות נגישה מהפוטר",
+    "requirementIds": [
+      "REQ-LEGAL-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LEGAL-059",
+    "title": "בדיקת טקסטים וכותרות - אין הבטחת מעבר מבחן",
+    "requirementIds": [
+      "REQ-LEGAL-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-LEGAL-060",
+    "title": "בדיקת פעולה מרכזית - אין אזכור גבייה פעילה",
+    "requirementIds": [
+      "REQ-LEGAL-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEO-061",
+    "title": "בדיקת כשל ידידותי - sitemap.xml קיים",
+    "requirementIds": [
+      "REQ-SEO-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEO-062",
+    "title": "בדיקת קישורים - robots.txt קיים",
+    "requirementIds": [
+      "REQ-SEO-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEO-063",
+    "title": "בדיקת שמירת מצב - title ייחודי לעמודים מרכזיים",
+    "requirementIds": [
+      "REQ-SEO-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEO-064",
+    "title": "טעינת תרחיש בסיסית - meta description קיים",
+    "requirementIds": [
+      "REQ-SEO-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEO-065",
+    "title": "בדיקת הרשאה/גישה - login/admin noindex במידת הצורך",
+    "requirementIds": [
+      "REQ-SEO-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-PERF-066",
+    "title": "בדיקת מובייל - מעבר עמודים אינו ממתין ל-Firestore",
+    "requirementIds": [
+      "REQ-PERF-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-PERF-067",
+    "title": "בדיקת טקסטים וכותרות - משימות רקע לא חוסמות UI",
+    "requirementIds": [
+      "REQ-PERF-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-PERF-068",
+    "title": "בדיקת פעולה מרכזית - mobile scripts לא מכבידים בדסקטופ",
+    "requirementIds": [
+      "REQ-PERF-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-PERF-069",
+    "title": "בדיקת כשל ידידותי - אין טעינת AI פעיל",
+    "requirementIds": [
+      "REQ-PERF-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-PERF-070",
+    "title": "בדיקת קישורים - אין שגיאות console חמורות",
+    "requirementIds": [
+      "REQ-PERF-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEC-071",
+    "title": "בדיקת שמירת מצב - אין סיסמאות בקוד",
+    "requirementIds": [
+      "REQ-SEC-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEC-072",
+    "title": "טעינת תרחיש בסיסית - אין private keys",
+    "requirementIds": [
+      "REQ-SEC-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEC-073",
+    "title": "בדיקת הרשאה/גישה - CSP מוגדר",
+    "requirementIds": [
+      "REQ-SEC-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEC-074",
+    "title": "בדיקת מובייל - Firestore rules מגבילות כתיבה",
+    "requirementIds": [
+      "REQ-SEC-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-SEC-075",
+    "title": "בדיקת טקסטים וכותרות - קלט משתמש אינו מוזרק ב-innerHTML",
+    "requirementIds": [
+      "REQ-SEC-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/auth.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-VER-076",
+    "title": "בדיקת פעולה מרכזית - ניהול גרסאות נגיש לאדמין בלבד",
+    "requirementIds": [
+      "REQ-VER-001"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-VER-077",
+    "title": "בדיקת כשל ידידותי - גרסאות מוצגות מראש",
+    "requirementIds": [
+      "REQ-VER-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-VER-078",
+    "title": "בדיקת קישורים - אפשר להכין טקסט מייל לגרסה",
+    "requirementIds": [
+      "REQ-VER-003"
+    ],
+    "type": "Security",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-VER-079",
+    "title": "בדיקת שמירת מצב - אין כפילויות בייבוא גרסאות",
+    "requirementIds": [
+      "REQ-VER-004"
+    ],
+    "type": "Accessibility",
+    "priority": "P1",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-VER-080",
+    "title": "טעינת תרחיש בסיסית - סטטוס גרסה מוצג",
+    "requirementIds": [
+      "REQ-VER-005"
+    ],
+    "type": "Mobile",
+    "priority": "P2",
+    "preconditions": [
+      "אתר הקורס זמין ב-TARGET_URL או בשרת סטטי מקומי",
+      "נתוני בדיקה אינם נשמרים ב-Firebase"
+    ],
+    "steps": [
+      "פתח את העמוד או התרחיש הרלוונטי",
+      "בצע את הפעולה המרכזית",
+      "בדוק הודעות, ניווט ושגיאות console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-GEN-081",
+    "title": "בדיקה משלימה - כל שיעור נטען בהצלחה",
+    "requirementIds": [
+      "REQ-LESSON-001"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין"
+    ],
+    "steps": [
+      "פתח עמוד מרכזי",
+      "אמת שהרכיב מופיע",
+      "אמת שאין שגיאת console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": false,
+      "script": ""
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-GEN-082",
+    "title": "בדיקה משלימה - שיעור כולל כותרת H1",
+    "requirementIds": [
+      "REQ-LESSON-002"
+    ],
+    "type": "Functional",
+    "priority": "P0",
+    "preconditions": [
+      "אתר הקורס זמין"
+    ],
+    "steps": [
+      "פתח עמוד מרכזי",
+      "אמת שהרכיב מופיע",
+      "אמת שאין שגיאת console"
+    ],
+    "expectedResults": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "actualResults": "",
+    "status": "not_run",
+    "automation": {
+      "automated": false,
+      "script": ""
+    },
+    "coveredFiles": [],
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "TC-PAGE-001",
+    "origin": "auto",
+    "sourceKey": "test:page:admin.html",
+    "title": "Smoke לעמוד admin.html",
+    "requirementIds": [
+      "REQ-PAGE-001"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את admin.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "admin.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-002",
+    "origin": "auto",
+    "sourceKey": "test:page:googleb124cb99fa73aa0c.html",
+    "title": "Smoke לעמוד googleb124cb99fa73aa0c.html",
+    "requirementIds": [
+      "REQ-PAGE-002"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את googleb124cb99fa73aa0c.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "googleb124cb99fa73aa0c.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-003",
+    "origin": "auto",
+    "sourceKey": "test:page:index.html",
+    "title": "Smoke לעמוד index.html",
+    "requirementIds": [
+      "REQ-PAGE-003"
+    ],
+    "type": "UI",
+    "priority": "P0",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את index.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "index.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-004",
+    "origin": "auto",
+    "sourceKey": "test:page:login.html",
+    "title": "Smoke לעמוד login.html",
+    "requirementIds": [
+      "REQ-PAGE-004"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את login.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "login.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-005",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/ai-assistant.html",
+    "title": "Smoke לעמוד pages/ai-assistant.html",
+    "requirementIds": [
+      "REQ-PAGE-005"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/ai-assistant.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/ai-assistant.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-006",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/checklists.html",
+    "title": "Smoke לעמוד pages/checklists.html",
+    "requirementIds": [
+      "REQ-PAGE-006"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/checklists.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/checklists.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-007",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/disclaimer.html",
+    "title": "Smoke לעמוד pages/disclaimer.html",
+    "requirementIds": [
+      "REQ-PAGE-007"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/disclaimer.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/disclaimer.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-008",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/exam-questions.html",
+    "title": "Smoke לעמוד pages/exam-questions.html",
+    "requirementIds": [
+      "REQ-PAGE-008"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/exam-questions.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/exam-questions.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-009",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/field-tools.html",
+    "title": "Smoke לעמוד pages/field-tools.html",
+    "requirementIds": [
+      "REQ-PAGE-009"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/field-tools.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/field-tools.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-010",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/game-challenge.html",
+    "title": "Smoke לעמוד pages/game-challenge.html",
+    "requirementIds": [
+      "REQ-PAGE-010"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/game-challenge.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/game-challenge.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-011",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/game-mistakes.html",
+    "title": "Smoke לעמוד pages/game-mistakes.html",
+    "requirementIds": [
+      "REQ-PAGE-011"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/game-mistakes.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/game-mistakes.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-012",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/game-results.html",
+    "title": "Smoke לעמוד pages/game-results.html",
+    "requirementIds": [
+      "REQ-PAGE-012"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/game-results.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/game-results.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-013",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/game-unit.html",
+    "title": "Smoke לעמוד pages/game-unit.html",
+    "requirementIds": [
+      "REQ-PAGE-013"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/game-unit.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/game-unit.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-014",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/glossary.html",
+    "title": "Smoke לעמוד pages/glossary.html",
+    "requirementIds": [
+      "REQ-PAGE-014"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/glossary.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/glossary.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-015",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/laws.html",
+    "title": "Smoke לעמוד pages/laws.html",
+    "requirementIds": [
+      "REQ-PAGE-015"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/laws.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/laws.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-016",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-01.html",
+    "title": "Smoke לעמוד pages/lesson-01.html",
+    "requirementIds": [
+      "REQ-PAGE-016"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-01.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-01.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-017",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-02.html",
+    "title": "Smoke לעמוד pages/lesson-02.html",
+    "requirementIds": [
+      "REQ-PAGE-017"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-02.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-02.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-018",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-03.html",
+    "title": "Smoke לעמוד pages/lesson-03.html",
+    "requirementIds": [
+      "REQ-PAGE-018"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-03.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-03.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-019",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-04.html",
+    "title": "Smoke לעמוד pages/lesson-04.html",
+    "requirementIds": [
+      "REQ-PAGE-019"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-04.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-04.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-020",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-05.html",
+    "title": "Smoke לעמוד pages/lesson-05.html",
+    "requirementIds": [
+      "REQ-PAGE-020"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-05.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-05.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-021",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-06.html",
+    "title": "Smoke לעמוד pages/lesson-06.html",
+    "requirementIds": [
+      "REQ-PAGE-021"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-06.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-06.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-022",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-07.html",
+    "title": "Smoke לעמוד pages/lesson-07.html",
+    "requirementIds": [
+      "REQ-PAGE-022"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-07.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-07.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-023",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-08.html",
+    "title": "Smoke לעמוד pages/lesson-08.html",
+    "requirementIds": [
+      "REQ-PAGE-023"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-08.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-08.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-024",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-09.html",
+    "title": "Smoke לעמוד pages/lesson-09.html",
+    "requirementIds": [
+      "REQ-PAGE-024"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-09.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-09.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-025",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-10.html",
+    "title": "Smoke לעמוד pages/lesson-10.html",
+    "requirementIds": [
+      "REQ-PAGE-025"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-10.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-10.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-026",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-11.html",
+    "title": "Smoke לעמוד pages/lesson-11.html",
+    "requirementIds": [
+      "REQ-PAGE-026"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-11.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-11.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-027",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/lesson-12.html",
+    "title": "Smoke לעמוד pages/lesson-12.html",
+    "requirementIds": [
+      "REQ-PAGE-027"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/lesson-12.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/lesson-12.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-028",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/privacy.html",
+    "title": "Smoke לעמוד pages/privacy.html",
+    "requirementIds": [
+      "REQ-PAGE-028"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/privacy.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/privacy.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-029",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/quizzes.html",
+    "title": "Smoke לעמוד pages/quizzes.html",
+    "requirementIds": [
+      "REQ-PAGE-029"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/quizzes.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/quizzes.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-030",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/safety-game.html",
+    "title": "Smoke לעמוד pages/safety-game.html",
+    "requirementIds": [
+      "REQ-PAGE-030"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/safety-game.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/safety-game.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-031",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/safety-management.html",
+    "title": "Smoke לעמוד pages/safety-management.html",
+    "requirementIds": [
+      "REQ-PAGE-031"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/safety-management.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/safety-management.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-032",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/standards.html",
+    "title": "Smoke לעמוד pages/standards.html",
+    "requirementIds": [
+      "REQ-PAGE-032"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/standards.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/standards.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-033",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/syllabus.html",
+    "title": "Smoke לעמוד pages/syllabus.html",
+    "requirementIds": [
+      "REQ-PAGE-033"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/syllabus.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/syllabus.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-034",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/templates.html",
+    "title": "Smoke לעמוד pages/templates.html",
+    "requirementIds": [
+      "REQ-PAGE-034"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/templates.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/templates.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-035",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/terms.html",
+    "title": "Smoke לעמוד pages/terms.html",
+    "requirementIds": [
+      "REQ-PAGE-035"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/terms.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/terms.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-PAGE-036",
+    "origin": "auto",
+    "sourceKey": "test:page:pages/version-management.html",
+    "title": "Smoke לעמוד pages/version-management.html",
+    "requirementIds": [
+      "REQ-PAGE-036"
+    ],
+    "type": "UI",
+    "priority": "P1",
+    "preconditions": [
+      "שרת אתר הקורס המקומי פעיל"
+    ],
+    "steps": [
+      "פתח את pages/version-management.html",
+      "בדוק שהעמוד נטען"
+    ],
+    "expectedResults": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/smoke.spec.js"
+    },
+    "coveredFiles": [
+      "pages/version-management.html"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-001",
+    "origin": "auto",
+    "sourceKey": "test:code:data/course-data.js",
+    "title": "Syntax למודול data/course-data.js",
+    "requirementIds": [
+      "REQ-CODE-001"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "data/course-data.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-002",
+    "origin": "auto",
+    "sourceKey": "test:code:data/exam-questions.js",
+    "title": "Syntax למודול data/exam-questions.js",
+    "requirementIds": [
+      "REQ-CODE-002"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "data/exam-questions.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-003",
+    "origin": "auto",
+    "sourceKey": "test:code:data/game-data.js",
+    "title": "Syntax למודול data/game-data.js",
+    "requirementIds": [
+      "REQ-CODE-003"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "data/game-data.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-004",
+    "origin": "auto",
+    "sourceKey": "test:code:data/site-versions.js",
+    "title": "Syntax למודול data/site-versions.js",
+    "requirementIds": [
+      "REQ-CODE-004"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "data/site-versions.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-005",
+    "origin": "auto",
+    "sourceKey": "test:code:js/accessibility.js",
+    "title": "Syntax למודול js/accessibility.js",
+    "requirementIds": [
+      "REQ-CODE-005"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/accessibility.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-006",
+    "origin": "auto",
+    "sourceKey": "test:code:js/admin-ui.js",
+    "title": "Syntax למודול js/admin-ui.js",
+    "requirementIds": [
+      "REQ-CODE-006"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/admin-ui.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-007",
+    "origin": "auto",
+    "sourceKey": "test:code:js/admin.js",
+    "title": "Syntax למודול js/admin.js",
+    "requirementIds": [
+      "REQ-CODE-007"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/admin.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-008",
+    "origin": "auto",
+    "sourceKey": "test:code:js/ai-assistant.js",
+    "title": "Syntax למודול js/ai-assistant.js",
+    "requirementIds": [
+      "REQ-CODE-008"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/ai-assistant.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-009",
+    "origin": "auto",
+    "sourceKey": "test:code:js/app.js",
+    "title": "Syntax למודול js/app.js",
+    "requirementIds": [
+      "REQ-CODE-009"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/app.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-010",
+    "origin": "auto",
+    "sourceKey": "test:code:js/auth.js",
+    "title": "Syntax למודול js/auth.js",
+    "requirementIds": [
+      "REQ-CODE-010"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/auth.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-011",
+    "origin": "auto",
+    "sourceKey": "test:code:js/checklists.js",
+    "title": "Syntax למודול js/checklists.js",
+    "requirementIds": [
+      "REQ-CODE-011"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/checklists.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-012",
+    "origin": "auto",
+    "sourceKey": "test:code:js/email-config.js",
+    "title": "Syntax למודול js/email-config.js",
+    "requirementIds": [
+      "REQ-CODE-012"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/email-config.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-013",
+    "origin": "auto",
+    "sourceKey": "test:code:js/email-notifications.js",
+    "title": "Syntax למודול js/email-notifications.js",
+    "requirementIds": [
+      "REQ-CODE-013"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/email-notifications.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-014",
+    "origin": "auto",
+    "sourceKey": "test:code:js/exam.js",
+    "title": "Syntax למודול js/exam.js",
+    "requirementIds": [
+      "REQ-CODE-014"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/exam.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-015",
+    "origin": "auto",
+    "sourceKey": "test:code:js/feedback.js",
+    "title": "Syntax למודול js/feedback.js",
+    "requirementIds": [
+      "REQ-CODE-015"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/feedback.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-016",
+    "origin": "auto",
+    "sourceKey": "test:code:js/firebase-config.js",
+    "title": "Syntax למודול js/firebase-config.js",
+    "requirementIds": [
+      "REQ-CODE-016"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/firebase-config.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-017",
+    "origin": "auto",
+    "sourceKey": "test:code:js/game-challenge.js",
+    "title": "Syntax למודול js/game-challenge.js",
+    "requirementIds": [
+      "REQ-CODE-017"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/game-challenge.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-018",
+    "origin": "auto",
+    "sourceKey": "test:code:js/game-mistakes.js",
+    "title": "Syntax למודול js/game-mistakes.js",
+    "requirementIds": [
+      "REQ-CODE-018"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/game-mistakes.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-019",
+    "origin": "auto",
+    "sourceKey": "test:code:js/game-results.js",
+    "title": "Syntax למודול js/game-results.js",
+    "requirementIds": [
+      "REQ-CODE-019"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/game-results.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-020",
+    "origin": "auto",
+    "sourceKey": "test:code:js/game-state.js",
+    "title": "Syntax למודול js/game-state.js",
+    "requirementIds": [
+      "REQ-CODE-020"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/game-state.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-021",
+    "origin": "auto",
+    "sourceKey": "test:code:js/game-ui.js",
+    "title": "Syntax למודול js/game-ui.js",
+    "requirementIds": [
+      "REQ-CODE-021"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/game-ui.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-022",
+    "origin": "auto",
+    "sourceKey": "test:code:js/home.js",
+    "title": "Syntax למודול js/home.js",
+    "requirementIds": [
+      "REQ-CODE-022"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/home.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-023",
+    "origin": "auto",
+    "sourceKey": "test:code:js/learning-hub.js",
+    "title": "Syntax למודול js/learning-hub.js",
+    "requirementIds": [
+      "REQ-CODE-023"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/learning-hub.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-024",
+    "origin": "auto",
+    "sourceKey": "test:code:js/m-lessons.js",
+    "title": "Syntax למודול js/m-lessons.js",
+    "requirementIds": [
+      "REQ-CODE-024"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/m-lessons.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-025",
+    "origin": "auto",
+    "sourceKey": "test:code:js/m-mobile.js",
+    "title": "Syntax למודול js/m-mobile.js",
+    "requirementIds": [
+      "REQ-CODE-025"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/m-mobile.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-026",
+    "origin": "auto",
+    "sourceKey": "test:code:js/quiz-ui.js",
+    "title": "Syntax למודול js/quiz-ui.js",
+    "requirementIds": [
+      "REQ-CODE-026"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/quiz-ui.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-027",
+    "origin": "auto",
+    "sourceKey": "test:code:js/quizzes.js",
+    "title": "Syntax למודול js/quizzes.js",
+    "requirementIds": [
+      "REQ-CODE-027"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/quizzes.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-028",
+    "origin": "auto",
+    "sourceKey": "test:code:js/search.js",
+    "title": "Syntax למודול js/search.js",
+    "requirementIds": [
+      "REQ-CODE-028"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/search.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-029",
+    "origin": "auto",
+    "sourceKey": "test:code:js/storage.js",
+    "title": "Syntax למודול js/storage.js",
+    "requirementIds": [
+      "REQ-CODE-029"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/storage.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-030",
+    "origin": "auto",
+    "sourceKey": "test:code:js/topic-graph.js",
+    "title": "Syntax למודול js/topic-graph.js",
+    "requirementIds": [
+      "REQ-CODE-030"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/topic-graph.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-031",
+    "origin": "auto",
+    "sourceKey": "test:code:js/version-management.js",
+    "title": "Syntax למודול js/version-management.js",
+    "requirementIds": [
+      "REQ-CODE-031"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/version-management.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-032",
+    "origin": "auto",
+    "sourceKey": "test:code:js/whats-new.js",
+    "title": "Syntax למודול js/whats-new.js",
+    "requirementIds": [
+      "REQ-CODE-032"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "js/whats-new.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-033",
+    "origin": "auto",
+    "sourceKey": "test:code:scripts/audit-questions-quality.js",
+    "title": "Syntax למודול scripts/audit-questions-quality.js",
+    "requirementIds": [
+      "REQ-CODE-033"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "scripts/audit-questions-quality.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-CODE-034",
+    "origin": "auto",
+    "sourceKey": "test:code:scripts/generate-site-versions.js",
+    "title": "Syntax למודול scripts/generate-site-versions.js",
+    "requirementIds": [
+      "REQ-CODE-034"
+    ],
+    "type": "Functional",
+    "priority": "P1",
+    "preconditions": [
+      "Node זמין"
+    ],
+    "steps": [
+      "הרץ node --check על הקובץ"
+    ],
+    "expectedResults": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/scan-site.js"
+    },
+    "coveredFiles": [
+      "scripts/generate-site-versions.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-EXAM-041",
+    "origin": "auto",
+    "sourceKey": "test:exam:question-quality",
+    "title": "בדיקת איכות מאגר שאלות מבחן",
+    "requirementIds": [
+      "REQ-EXAM-006"
+    ],
+    "type": "Content",
+    "priority": "P0",
+    "preconditions": [
+      "data/exam-questions.js קיים"
+    ],
+    "steps": [
+      "טען את מאגר השאלות",
+      "בדוק שדות חובה",
+      "בדוק כפילויות"
+    ],
+    "expectedResults": [
+      "אין כפילויות משמעותיות",
+      "לכל שאלה relatedLessonId",
+      "לכל שאלה difficulty",
+      "לכל שאלה explanation",
+      "לכל שאלה לפחות 4 options"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "scripts/audit-questions-quality.js"
+    },
+    "coveredFiles": [
+      "data/exam-questions.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-REL-001",
+    "origin": "auto",
+    "sourceKey": "test:release:site-versions",
+    "title": "בדיקת קובץ גרסאות אתר",
+    "requirementIds": [
+      "REQ-REL-001"
+    ],
+    "type": "Admin",
+    "priority": "P1",
+    "preconditions": [
+      "data/site-versions.js קיים"
+    ],
+    "steps": [
+      "טען גרסאות",
+      "בדוק שדות חובה"
+    ],
+    "expectedResults": [
+      "קיימת לפחות גרסה אחת",
+      "לכל גרסה כותרת ותאריך",
+      "גרסה חדשה אינה מוחקת היסטוריה קיימת"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": true,
+      "script": "tests/playwright/admin.spec.js"
+    },
+    "coveredFiles": [
+      "data/site-versions.js"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  },
+  {
+    "id": "TC-SEC-076",
+    "origin": "auto",
+    "sourceKey": "test:security:firestore.rules",
+    "title": "בדיקת הרשאות firestore.rules",
+    "requirementIds": [
+      "REQ-SEC-006"
+    ],
+    "type": "Security",
+    "priority": "P0",
+    "preconditions": [
+      "firestore.rules קיים"
+    ],
+    "steps": [
+      "סרוק את rules",
+      "בדוק שאין public write"
+    ],
+    "expectedResults": [
+      "אין public write",
+      "משתמש רגיל לא משנה role/status",
+      "אדמין מוגבל לפי הרשאות"
+    ],
+    "actualResults": "",
+    "automation": {
+      "automated": false,
+      "script": ""
+    },
+    "coveredFiles": [
+      "firestore.rules"
+    ],
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "not_run"
+  }
+]

@@ -1,0 +1,8 @@
+﻿node_modules/
+logs/
+.qa-runtime.json
+reports/pdf/
+reports/json/
+test-results/
+playwright-report/
+npm-dev-*.log

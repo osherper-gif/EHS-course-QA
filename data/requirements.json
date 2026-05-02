@@ -1,0 +1,2257 @@
+[
+  {
+    "id": "REQ-AUTH-001",
+    "type": "Auth",
+    "title": "משתמש מאושר יכול להיכנס לאתר",
+    "description": "דרישה בתחום אימות והרשאות: משתמש מאושר יכול להיכנס לאתר. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-AUTH-002",
+    "type": "Auth",
+    "title": "משתמש לא מחובר מופנה למסך התחברות",
+    "description": "דרישה בתחום אימות והרשאות: משתמש לא מחובר מופנה למסך התחברות. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-AUTH-003",
+    "type": "Auth",
+    "title": "משתמש חסום אינו רואה תוכן",
+    "description": "דרישה בתחום אימות והרשאות: משתמש חסום אינו רואה תוכן. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-AUTH-004",
+    "type": "Auth",
+    "title": "משתמש pending מקבל הודעה ברורה",
+    "description": "דרישה בתחום אימות והרשאות: משתמש pending מקבל הודעה ברורה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-AUTH-005",
+    "type": "Auth",
+    "title": "התנתקות מנקה session מקומי",
+    "description": "דרישה בתחום אימות והרשאות: התנתקות מנקה session מקומי. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-ADMIN-001",
+    "type": "Admin",
+    "title": "רק אדמין רואה קישורי ניהול",
+    "description": "דרישה בתחום ניהול אדמין: רק אדמין רואה קישורי ניהול. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-ADMIN-002",
+    "type": "Admin",
+    "title": "admin.html חסום למשתמש רגיל",
+    "description": "דרישה בתחום ניהול אדמין: admin.html חסום למשתמש רגיל. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-ADMIN-003",
+    "type": "Admin",
+    "title": "אדמין יכול לראות משתמשים",
+    "description": "דרישה בתחום ניהול אדמין: אדמין יכול לראות משתמשים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-ADMIN-004",
+    "type": "Admin",
+    "title": "אדמין יכול לנהל דיווחי תקלה",
+    "description": "דרישה בתחום ניהול אדמין: אדמין יכול לנהל דיווחי תקלה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-ADMIN-005",
+    "type": "Admin",
+    "title": "אדמין יכול לראות גרסאות אתר",
+    "description": "דרישה בתחום ניהול אדמין: אדמין יכול לראות גרסאות אתר. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-MOB-001",
+    "type": "Mobile",
+    "title": "Bottom navigation מוצג במובייל",
+    "description": "דרישה בתחום מובייל: Bottom navigation מוצג במובייל. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-MOB-002",
+    "type": "Mobile",
+    "title": "אין מסך לבן במובייל",
+    "description": "דרישה בתחום מובייל: אין מסך לבן במובייל. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-MOB-003",
+    "type": "Mobile",
+    "title": "כפתורי מגע בגודל מינימלי",
+    "description": "דרישה בתחום מובייל: כפתורי מגע בגודל מינימלי. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-MOB-004",
+    "type": "Mobile",
+    "title": "עמודי שיעור קריאים במובייל",
+    "description": "דרישה בתחום מובייל: עמודי שיעור קריאים במובייל. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-MOB-005",
+    "type": "Mobile",
+    "title": "טבלאות אדמין הופכות לכרטיסים",
+    "description": "דרישה בתחום מובייל: טבלאות אדמין הופכות לכרטיסים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LESSON-001",
+    "type": "Content",
+    "title": "כל שיעור נטען בהצלחה",
+    "description": "דרישה בתחום שיעורים ותוכן: כל שיעור נטען בהצלחה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LESSON-002",
+    "type": "Content",
+    "title": "שיעור כולל כותרת H1",
+    "description": "דרישה בתחום שיעורים ותוכן: שיעור כולל כותרת H1. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LESSON-003",
+    "type": "Content",
+    "title": "שאלות שיעור מוצגות לפי שיעור",
+    "description": "דרישה בתחום שיעורים ותוכן: שאלות שיעור מוצגות לפי שיעור. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LESSON-004",
+    "type": "Content",
+    "title": "קישורי ראה גם תקינים",
+    "description": "דרישה בתחום שיעורים ותוכן: קישורי ראה גם תקינים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LESSON-005",
+    "type": "Content",
+    "title": "הערות אישיות נשמרות מקומית",
+    "description": "דרישה בתחום שיעורים ותוכן: הערות אישיות נשמרות מקומית. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-EXAM-001",
+    "type": "Exam",
+    "title": "עמוד תרגול נטען",
+    "description": "דרישה בתחום תרגול ומבחנים: עמוד תרגול נטען. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-EXAM-002",
+    "type": "Exam",
+    "title": "מבחן מתחיל בלחיצה",
+    "description": "דרישה בתחום תרגול ומבחנים: מבחן מתחיל בלחיצה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-EXAM-003",
+    "type": "Exam",
+    "title": "שאלה מוצגת עם ארבע תשובות",
+    "description": "דרישה בתחום תרגול ומבחנים: שאלה מוצגת עם ארבע תשובות. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-EXAM-004",
+    "type": "Exam",
+    "title": "ציון מוצג בסיום",
+    "description": "דרישה בתחום תרגול ומבחנים: ציון מוצג בסיום. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-EXAM-005",
+    "type": "Exam",
+    "title": "ניסיון חוזר מערבב שאלות",
+    "description": "דרישה בתחום תרגול ומבחנים: ניסיון חוזר מערבב שאלות. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-GAME-001",
+    "type": "Game",
+    "title": "עמוד אתגר בטיחות נטען",
+    "description": "דרישה בתחום אתגר בטיחות: עמוד אתגר בטיחות נטען. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-GAME-002",
+    "type": "Game",
+    "title": "בחירת רמת קושי נשמרת",
+    "description": "דרישה בתחום אתגר בטיחות: בחירת רמת קושי נשמרת. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-GAME-003",
+    "type": "Game",
+    "title": "שלב ראשון ניתן להתחלה",
+    "description": "דרישה בתחום אתגר בטיחות: שלב ראשון ניתן להתחלה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-GAME-004",
+    "type": "Game",
+    "title": "ניקוד XP מחושב",
+    "description": "דרישה בתחום אתגר בטיחות: ניקוד XP מחושב. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-GAME-005",
+    "type": "Game",
+    "title": "טעויות נשמרות לחזרה",
+    "description": "דרישה בתחום אתגר בטיחות: טעויות נשמרות לחזרה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-FDBK-001",
+    "type": "Feedback",
+    "title": "כפתור דיווח תקלה זמין למשתמש מחובר",
+    "description": "דרישה בתחום דיווח תקלה: כפתור דיווח תקלה זמין למשתמש מחובר. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-FDBK-002",
+    "type": "Feedback",
+    "title": "טופס דיווח נפתח",
+    "description": "דרישה בתחום דיווח תקלה: טופס דיווח נפתח. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-FDBK-003",
+    "type": "Feedback",
+    "title": "שדות חובה מאומתים",
+    "description": "דרישה בתחום דיווח תקלה: שדות חובה מאומתים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-FDBK-004",
+    "type": "Feedback",
+    "title": "כשל Firestore נשמר ב-localStorage",
+    "description": "דרישה בתחום דיווח תקלה: כשל Firestore נשמר ב-localStorage. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-FDBK-005",
+    "type": "Feedback",
+    "title": "mailto זמין כחלופה",
+    "description": "דרישה בתחום דיווח תקלה: mailto זמין כחלופה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-A11Y-001",
+    "type": "Accessibility",
+    "title": "html כולל lang he ו-dir rtl",
+    "description": "דרישה בתחום נגישות: html כולל lang he ו-dir rtl. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-A11Y-002",
+    "type": "Accessibility",
+    "title": "קישור דלג לתוכן קיים",
+    "description": "דרישה בתחום נגישות: קישור דלג לתוכן קיים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-A11Y-003",
+    "type": "Accessibility",
+    "title": "לכל עמוד H1 יחיד",
+    "description": "דרישה בתחום נגישות: לכל עמוד H1 יחיד. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-A11Y-004",
+    "type": "Accessibility",
+    "title": "טפסים כוללים labels",
+    "description": "דרישה בתחום נגישות: טפסים כוללים labels. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-A11Y-005",
+    "type": "Accessibility",
+    "title": "Focus visible ברור",
+    "description": "דרישה בתחום נגישות: Focus visible ברור. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LEGAL-001",
+    "type": "Legal",
+    "title": "מדיניות פרטיות נגישה מהפוטר",
+    "description": "דרישה בתחום מדיניות והצהרות: מדיניות פרטיות נגישה מהפוטר. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LEGAL-002",
+    "type": "Legal",
+    "title": "תנאי שימוש נגישה מהפוטר",
+    "description": "דרישה בתחום מדיניות והצהרות: תנאי שימוש נגישה מהפוטר. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LEGAL-003",
+    "type": "Legal",
+    "title": "הצהרת אחריות נגישה מהפוטר",
+    "description": "דרישה בתחום מדיניות והצהרות: הצהרת אחריות נגישה מהפוטר. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LEGAL-004",
+    "type": "Legal",
+    "title": "אין הבטחת מעבר מבחן",
+    "description": "דרישה בתחום מדיניות והצהרות: אין הבטחת מעבר מבחן. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-LEGAL-005",
+    "type": "Legal",
+    "title": "אין אזכור גבייה פעילה",
+    "description": "דרישה בתחום מדיניות והצהרות: אין אזכור גבייה פעילה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEO-001",
+    "type": "SEO",
+    "title": "sitemap.xml קיים",
+    "description": "דרישה בתחום SEO טכני: sitemap.xml קיים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEO-002",
+    "type": "SEO",
+    "title": "robots.txt קיים",
+    "description": "דרישה בתחום SEO טכני: robots.txt קיים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEO-003",
+    "type": "SEO",
+    "title": "title ייחודי לעמודים מרכזיים",
+    "description": "דרישה בתחום SEO טכני: title ייחודי לעמודים מרכזיים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEO-004",
+    "type": "SEO",
+    "title": "meta description קיים",
+    "description": "דרישה בתחום SEO טכני: meta description קיים. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEO-005",
+    "type": "SEO",
+    "title": "login/admin noindex במידת הצורך",
+    "description": "דרישה בתחום SEO טכני: login/admin noindex במידת הצורך. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-PERF-001",
+    "type": "Performance",
+    "title": "מעבר עמודים אינו ממתין ל-Firestore",
+    "description": "דרישה בתחום ביצועים: מעבר עמודים אינו ממתין ל-Firestore. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-PERF-002",
+    "type": "Performance",
+    "title": "משימות רקע לא חוסמות UI",
+    "description": "דרישה בתחום ביצועים: משימות רקע לא חוסמות UI. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-PERF-003",
+    "type": "Performance",
+    "title": "mobile scripts לא מכבידים בדסקטופ",
+    "description": "דרישה בתחום ביצועים: mobile scripts לא מכבידים בדסקטופ. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-PERF-004",
+    "type": "Performance",
+    "title": "אין טעינת AI פעיל",
+    "description": "דרישה בתחום ביצועים: אין טעינת AI פעיל. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-PERF-005",
+    "type": "Performance",
+    "title": "אין שגיאות console חמורות",
+    "description": "דרישה בתחום ביצועים: אין שגיאות console חמורות. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEC-001",
+    "type": "Security",
+    "title": "אין סיסמאות בקוד",
+    "description": "דרישה בתחום אבטחה: אין סיסמאות בקוד. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEC-002",
+    "type": "Security",
+    "title": "אין private keys",
+    "description": "דרישה בתחום אבטחה: אין private keys. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEC-003",
+    "type": "Security",
+    "title": "CSP מוגדר",
+    "description": "דרישה בתחום אבטחה: CSP מוגדר. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEC-004",
+    "type": "Security",
+    "title": "Firestore rules מגבילות כתיבה",
+    "description": "דרישה בתחום אבטחה: Firestore rules מגבילות כתיבה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-SEC-005",
+    "type": "Security",
+    "title": "קלט משתמש אינו מוזרק ב-innerHTML",
+    "description": "דרישה בתחום אבטחה: קלט משתמש אינו מוזרק ב-innerHTML. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-VER-001",
+    "type": "Admin",
+    "title": "ניהול גרסאות נגיש לאדמין בלבד",
+    "description": "דרישה בתחום ניהול גרסאות: ניהול גרסאות נגיש לאדמין בלבד. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-VER-002",
+    "type": "Admin",
+    "title": "גרסאות מוצגות מראש",
+    "description": "דרישה בתחום ניהול גרסאות: גרסאות מוצגות מראש. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-VER-003",
+    "type": "Admin",
+    "title": "אפשר להכין טקסט מייל לגרסה",
+    "description": "דרישה בתחום ניהול גרסאות: אפשר להכין טקסט מייל לגרסה. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-VER-004",
+    "type": "Admin",
+    "title": "אין כפילויות בייבוא גרסאות",
+    "description": "דרישה בתחום ניהול גרסאות: אין כפילויות בייבוא גרסאות. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-VER-005",
+    "type": "Admin",
+    "title": "סטטוס גרסה מוצג",
+    "description": "דרישה בתחום ניהול גרסאות: סטטוס גרסה מוצג. הדרישה נועדה להבטיח שהאתר יציב, ברור ובטוח לשימוש משתמשי הקורס.",
+    "priority": "P2",
+    "acceptanceCriteria": [
+      "המשתמש יכול להשלים את התרחיש ללא שגיאה",
+      "התנהגות המערכת תואמת את הטקסטים וההרשאות שהוגדרו",
+      "אין שגיאות console חמורות בתרחיש זה"
+    ],
+    "source": "Internal product requirement",
+    "status": "active",
+    "origin": "manual",
+    "lastSeen": "2026-05-02T17:03:11.772Z"
+  },
+  {
+    "id": "REQ-PAGE-001",
+    "origin": "auto",
+    "sourceKey": "page:admin.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: admin.html",
+    "description": "העמוד admin.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-002",
+    "origin": "auto",
+    "sourceKey": "page:googleb124cb99fa73aa0c.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: googleb124cb99fa73aa0c.html",
+    "description": "העמוד googleb124cb99fa73aa0c.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-003",
+    "origin": "auto",
+    "sourceKey": "page:index.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: index.html",
+    "description": "העמוד index.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-004",
+    "origin": "auto",
+    "sourceKey": "page:login.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: login.html",
+    "description": "העמוד login.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-005",
+    "origin": "auto",
+    "sourceKey": "page:pages/ai-assistant.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/ai-assistant.html",
+    "description": "העמוד pages/ai-assistant.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-006",
+    "origin": "auto",
+    "sourceKey": "page:pages/checklists.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/checklists.html",
+    "description": "העמוד pages/checklists.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-007",
+    "origin": "auto",
+    "sourceKey": "page:pages/disclaimer.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/disclaimer.html",
+    "description": "העמוד pages/disclaimer.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-008",
+    "origin": "auto",
+    "sourceKey": "page:pages/exam-questions.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/exam-questions.html",
+    "description": "העמוד pages/exam-questions.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-009",
+    "origin": "auto",
+    "sourceKey": "page:pages/field-tools.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/field-tools.html",
+    "description": "העמוד pages/field-tools.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-010",
+    "origin": "auto",
+    "sourceKey": "page:pages/game-challenge.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/game-challenge.html",
+    "description": "העמוד pages/game-challenge.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-011",
+    "origin": "auto",
+    "sourceKey": "page:pages/game-mistakes.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/game-mistakes.html",
+    "description": "העמוד pages/game-mistakes.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-012",
+    "origin": "auto",
+    "sourceKey": "page:pages/game-results.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/game-results.html",
+    "description": "העמוד pages/game-results.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-013",
+    "origin": "auto",
+    "sourceKey": "page:pages/game-unit.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/game-unit.html",
+    "description": "העמוד pages/game-unit.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-014",
+    "origin": "auto",
+    "sourceKey": "page:pages/glossary.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/glossary.html",
+    "description": "העמוד pages/glossary.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-015",
+    "origin": "auto",
+    "sourceKey": "page:pages/laws.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/laws.html",
+    "description": "העמוד pages/laws.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-016",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-01.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-01.html",
+    "description": "העמוד pages/lesson-01.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-017",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-02.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-02.html",
+    "description": "העמוד pages/lesson-02.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-018",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-03.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-03.html",
+    "description": "העמוד pages/lesson-03.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-019",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-04.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-04.html",
+    "description": "העמוד pages/lesson-04.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-020",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-05.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-05.html",
+    "description": "העמוד pages/lesson-05.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-021",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-06.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-06.html",
+    "description": "העמוד pages/lesson-06.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-022",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-07.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-07.html",
+    "description": "העמוד pages/lesson-07.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-023",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-08.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-08.html",
+    "description": "העמוד pages/lesson-08.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-024",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-09.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-09.html",
+    "description": "העמוד pages/lesson-09.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-025",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-10.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-10.html",
+    "description": "העמוד pages/lesson-10.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-026",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-11.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-11.html",
+    "description": "העמוד pages/lesson-11.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-027",
+    "origin": "auto",
+    "sourceKey": "page:pages/lesson-12.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/lesson-12.html",
+    "description": "העמוד pages/lesson-12.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-028",
+    "origin": "auto",
+    "sourceKey": "page:pages/privacy.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/privacy.html",
+    "description": "העמוד pages/privacy.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-029",
+    "origin": "auto",
+    "sourceKey": "page:pages/quizzes.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/quizzes.html",
+    "description": "העמוד pages/quizzes.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-030",
+    "origin": "auto",
+    "sourceKey": "page:pages/safety-game.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/safety-game.html",
+    "description": "העמוד pages/safety-game.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-031",
+    "origin": "auto",
+    "sourceKey": "page:pages/safety-management.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/safety-management.html",
+    "description": "העמוד pages/safety-management.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-032",
+    "origin": "auto",
+    "sourceKey": "page:pages/standards.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/standards.html",
+    "description": "העמוד pages/standards.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-033",
+    "origin": "auto",
+    "sourceKey": "page:pages/syllabus.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/syllabus.html",
+    "description": "העמוד pages/syllabus.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-034",
+    "origin": "auto",
+    "sourceKey": "page:pages/templates.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/templates.html",
+    "description": "העמוד pages/templates.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-035",
+    "origin": "auto",
+    "sourceKey": "page:pages/terms.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/terms.html",
+    "description": "העמוד pages/terms.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-PAGE-036",
+    "origin": "auto",
+    "sourceKey": "page:pages/version-management.html",
+    "type": "Functional",
+    "title": "זמינות עמוד: pages/version-management.html",
+    "description": "העמוד pages/version-management.html צריך להיטען ללא 404 וללא מסך ריק.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "העמוד מחזיר HTTP תקין",
+      "ה-body אינו ריק",
+      "אין שגיאת console חמורה בטעינה"
+    ],
+    "source": "Auto sync from site scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-001",
+    "origin": "auto",
+    "sourceKey": "code:data/course-data.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: data/course-data.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-002",
+    "origin": "auto",
+    "sourceKey": "code:data/exam-questions.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: data/exam-questions.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-003",
+    "origin": "auto",
+    "sourceKey": "code:data/game-data.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: data/game-data.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-004",
+    "origin": "auto",
+    "sourceKey": "code:data/site-versions.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: data/site-versions.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-005",
+    "origin": "auto",
+    "sourceKey": "code:js/accessibility.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/accessibility.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-006",
+    "origin": "auto",
+    "sourceKey": "code:js/admin-ui.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/admin-ui.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-007",
+    "origin": "auto",
+    "sourceKey": "code:js/admin.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/admin.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-008",
+    "origin": "auto",
+    "sourceKey": "code:js/ai-assistant.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/ai-assistant.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-009",
+    "origin": "auto",
+    "sourceKey": "code:js/app.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/app.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-010",
+    "origin": "auto",
+    "sourceKey": "code:js/auth.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/auth.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-011",
+    "origin": "auto",
+    "sourceKey": "code:js/checklists.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/checklists.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-012",
+    "origin": "auto",
+    "sourceKey": "code:js/email-config.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/email-config.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-013",
+    "origin": "auto",
+    "sourceKey": "code:js/email-notifications.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/email-notifications.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-014",
+    "origin": "auto",
+    "sourceKey": "code:js/exam.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/exam.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-015",
+    "origin": "auto",
+    "sourceKey": "code:js/feedback.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/feedback.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-016",
+    "origin": "auto",
+    "sourceKey": "code:js/firebase-config.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/firebase-config.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-017",
+    "origin": "auto",
+    "sourceKey": "code:js/game-challenge.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/game-challenge.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-018",
+    "origin": "auto",
+    "sourceKey": "code:js/game-mistakes.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/game-mistakes.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-019",
+    "origin": "auto",
+    "sourceKey": "code:js/game-results.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/game-results.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-020",
+    "origin": "auto",
+    "sourceKey": "code:js/game-state.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/game-state.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-021",
+    "origin": "auto",
+    "sourceKey": "code:js/game-ui.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/game-ui.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-022",
+    "origin": "auto",
+    "sourceKey": "code:js/home.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/home.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-023",
+    "origin": "auto",
+    "sourceKey": "code:js/learning-hub.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/learning-hub.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-024",
+    "origin": "auto",
+    "sourceKey": "code:js/m-lessons.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/m-lessons.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-025",
+    "origin": "auto",
+    "sourceKey": "code:js/m-mobile.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/m-mobile.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-026",
+    "origin": "auto",
+    "sourceKey": "code:js/quiz-ui.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/quiz-ui.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-027",
+    "origin": "auto",
+    "sourceKey": "code:js/quizzes.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/quizzes.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-028",
+    "origin": "auto",
+    "sourceKey": "code:js/search.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/search.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-029",
+    "origin": "auto",
+    "sourceKey": "code:js/storage.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/storage.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-030",
+    "origin": "auto",
+    "sourceKey": "code:js/topic-graph.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/topic-graph.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-031",
+    "origin": "auto",
+    "sourceKey": "code:js/version-management.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/version-management.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-032",
+    "origin": "auto",
+    "sourceKey": "code:js/whats-new.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: js/whats-new.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-033",
+    "origin": "auto",
+    "sourceKey": "code:scripts/audit-questions-quality.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: scripts/audit-questions-quality.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-CODE-034",
+    "origin": "auto",
+    "sourceKey": "code:scripts/generate-site-versions.js",
+    "type": "Functional",
+    "title": "תקינות מודול קוד: scripts/generate-site-versions.js",
+    "description": "קובץ JS צריך לעבור בדיקת תחביר ולהיטען ללא שבירת האתר.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "node --check עובר",
+      "המודול אינו יוצר שגיאת console חמורה"
+    ],
+    "source": "Auto sync from JS scan",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-EXAM-006",
+    "origin": "auto",
+    "sourceKey": "exam:question-quality",
+    "type": "Exam",
+    "title": "איכות מאגר שאלות מבחן",
+    "description": "כל שאלת מבחן צריכה לכלול שיוך שיעור, רמת קושי, הסבר ולפחות ארבע אפשרויות.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "אין כפילויות משמעותיות",
+      "לכל שאלה relatedLessonId",
+      "לכל שאלה difficulty",
+      "לכל שאלה explanation",
+      "לכל שאלה לפחות 4 options"
+    ],
+    "source": "Auto sync from exam-questions.js",
+    "metrics": {
+      "questionCount": 300
+    },
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-REL-001",
+    "origin": "auto",
+    "sourceKey": "release:site-versions",
+    "type": "Admin",
+    "title": "תיעוד גרסאות ושינויים",
+    "description": "כל שינוי משמעותי באתר צריך להופיע בניהול גרסאות ובדוח שחרור.",
+    "priority": "P1",
+    "acceptanceCriteria": [
+      "קיימת לפחות גרסה אחת",
+      "לכל גרסה כותרת ותאריך",
+      "גרסה חדשה אינה מוחקת היסטוריה קיימת"
+    ],
+    "source": "Auto sync from site-versions.js",
+    "metrics": {
+      "versionCount": 20
+    },
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  },
+  {
+    "id": "REQ-SEC-006",
+    "origin": "auto",
+    "sourceKey": "security:firestore.rules",
+    "type": "Security",
+    "title": "תקינות הרשאות firestore.rules",
+    "description": "קובץ הרשאות צריך להגן מפני כתיבה ציבורית ולשמור על הפרדת משתמשים.",
+    "priority": "P0",
+    "acceptanceCriteria": [
+      "אין public write",
+      "משתמש רגיל לא משנה role/status",
+      "אדמין מוגבל לפי הרשאות"
+    ],
+    "source": "Auto sync from firestore.rules",
+    "lastSeen": "2026-05-02T18:31:09.024Z",
+    "status": "active"
+  }
+]

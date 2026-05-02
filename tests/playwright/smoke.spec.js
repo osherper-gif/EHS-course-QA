@@ -1,0 +1,5 @@
+﻿const { test, expect } = require('@playwright/test');
+const target = process.env.TARGET_URL || 'http://localhost:8080';
+test('home loads or redirects without blank screen', async ({ page }) => { await page.goto(target, {waitUntil:'domcontentloaded'}); await expect(page.locator('body')).toBeVisible(); await expect(page.locator('body')).not.toHaveText(/^\s*$/); });
+test('core local links load visible content', async ({ page }) => { for (const p of ['/', '/pages/quizzes.html', '/pages/safety-game.html', '/pages/lesson-01.html']) { const res = await page.goto(target + p, {waitUntil:'domcontentloaded'}); if (res) expect(res.status()).toBeLessThan(500); await expect(page.locator('body')).toBeVisible(); await expect(page.locator('body')).not.toHaveText(/^\s*$/); } });
+test('basic accessibility landmarks exist', async ({ page }) => { await page.goto(target, {waitUntil:'domcontentloaded'}); await expect(page.locator('html')).toHaveAttribute('dir','rtl'); await expect(page.locator('html')).toHaveAttribute('lang',/he/); await expect(page.locator('a.skip-link')).toHaveCount(1); });

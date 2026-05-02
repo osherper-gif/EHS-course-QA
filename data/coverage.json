@@ -1,0 +1,159 @@
+{
+  "generatedAt": "2026-05-02T18:31:16.785Z",
+  "requirements": {
+    "total": 138,
+    "covered": 138,
+    "percent": 100
+  },
+  "tests": {
+    "total": 155,
+    "automated": 152
+  },
+  "files": {
+    "total": 71,
+    "covered": 46,
+    "percent": 65,
+    "coveredFiles": [
+      "admin.html",
+      "css/styles.css",
+      "data/exam-questions.js",
+      "data/game-data.js",
+      "data/site-versions.js",
+      "index.html",
+      "js/admin-ui.js",
+      "js/admin.js",
+      "js/app.js",
+      "js/auth.js",
+      "js/exam.js",
+      "js/feedback.js",
+      "js/firebase-config.js",
+      "js/game-challenge.js",
+      "js/game-mistakes.js",
+      "js/game-results.js",
+      "js/game-state.js",
+      "js/game-ui.js",
+      "js/m-lessons.js",
+      "js/m-mobile.js",
+      "js/quiz-ui.js",
+      "js/quizzes.js",
+      "js/version-management.js",
+      "login.html",
+      "pages/exam-questions.html",
+      "pages/game-challenge.html",
+      "pages/game-mistakes.html",
+      "pages/game-results.html",
+      "pages/game-unit.html",
+      "pages/lesson-01.html",
+      "pages/lesson-02.html",
+      "pages/lesson-03.html",
+      "pages/lesson-04.html",
+      "pages/lesson-05.html",
+      "pages/lesson-06.html",
+      "pages/lesson-07.html",
+      "pages/lesson-08.html",
+      "pages/lesson-09.html",
+      "pages/lesson-10.html",
+      "pages/lesson-11.html",
+      "pages/lesson-12.html",
+      "pages/quizzes.html",
+      "pages/safety-game.html",
+      "pages/syllabus.html",
+      "pages/version-management.html",
+      "scripts/generate-site-versions.js"
+    ],
+    "uncoveredFiles": [
+      "data/course-data.js",
+      "googleb124cb99fa73aa0c.html",
+      "js/accessibility.js",
+      "js/ai-assistant.js",
+      "js/checklists.js",
+      "js/email-config.js",
+      "js/email-notifications.js",
+      "js/home.js",
+      "js/learning-hub.js",
+      "js/search.js",
+      "js/storage.js",
+      "js/topic-graph.js",
+      "js/whats-new.js",
+      "pages/ai-assistant.html",
+      "pages/checklists.html",
+      "pages/disclaimer.html",
+      "pages/field-tools.html",
+      "pages/glossary.html",
+      "pages/laws.html",
+      "pages/privacy.html",
+      "pages/safety-management.html",
+      "pages/standards.html",
+      "pages/templates.html",
+      "pages/terms.html",
+      "scripts/audit-questions-quality.js"
+    ]
+  },
+  "byType": {
+    "Auth": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Admin": {
+      "total": 11,
+      "covered": 11,
+      "percent": 100
+    },
+    "Mobile": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Content": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Exam": {
+      "total": 6,
+      "covered": 6,
+      "percent": 100
+    },
+    "Game": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Feedback": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Accessibility": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Legal": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "SEO": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Performance": {
+      "total": 5,
+      "covered": 5,
+      "percent": 100
+    },
+    "Security": {
+      "total": 6,
+      "covered": 6,
+      "percent": 100
+    },
+    "Functional": {
+      "total": 70,
+      "covered": 70,
+      "percent": 100
+    }
+  }
+}
