@@ -1,20 +1,114 @@
-const api = (url, opts) => fetch(url, opts).then(r=>r.json());
-const app = document.getElementById('app');
-let state = { requirements: [], tests: [], runs: [], coverage: null, summary: null };
-function esc(v){return String(v ?? '').replace(/[&<>]/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[s]));}
-async function load(view='dashboard'){ const [summary, requirements, tests, runs, coverage] = await Promise.all(['/api/summary','/api/requirements','/api/test-cases','/api/test-runs','/api/coverage'].map(x=>api(x))); state={summary,requirements,tests,runs,coverage}; render(view); }
-function setView(v){ render(v); }
-document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
-document.addEventListener('click', (event) => { const btn = event.target.closest('[data-run]'); if (btn) action(btn.dataset.run); });
-function render(view){ ({dashboard,requirements,tests,runs,trace,coverage,reports}[view]||dashboard)(); }
-function runtimeBlock(){ const s=state.summary; return '<section class="panel"><h2>מצב סביבה</h2><div class="cards"><div class="card"><h3>אתר הקורס</h3><div class="metric">'+(s.courseRunning?'רץ':'לא ידוע')+'</div><p>'+esc(s.targetUrl)+'</p></div><div class="card"><h3>שרת QA</h3><div class="metric">'+(s.qaRunning?'רץ':'לא')+'</div><p>'+esc(s.qaUrl)+'</p></div><div class="card"><h3>Auto / Manual / Stale</h3><p>Auto: '+s.requirementsAuto+' | Manual: '+s.requirementsManual+' | Stale: '+s.requirementsStale+'</p></div><div class="card"><h3>פערי עקיבות</h3><p>דרישות ללא בדיקות: '+s.requirementsWithoutTests+'<br>בדיקות ללא דרישות: '+s.testsWithoutRequirements+'</p></div></div></section>'; }
-function dashboard(){ const s=state.summary; app.innerHTML=runtimeBlock()+'<section class="cards">'+[['דרישות',s.requirementsTotal],['כיסוי דרישות',s.requirementsCoverage+'%'],['בדיקות',s.testsTotal],['בדיקות אוטומטיות',s.testsAutomated],['עברו',s.testsPassed],['אחוז מעבר',s.testsPassRate+'%']].map(([k,v])=>'<div class="card"><h2>'+k+'</h2><div class="metric">'+v+'</div></div>').join('')+'</section><section class="panel"><h2>פעולות מהירות</h2><div class="toolbar"><button data-run="sync">סנכרן מהאתר</button><button data-run="scan">סרוק אתר</button><button data-run="test">הרץ בדיקות</button><button data-run="report">צור PDF</button><button data-run="all">הרץ הכל</button></div><pre id="actionOut">מוכן להרצה.</pre></section>'; }
-async function action(name){ const out=document.getElementById('actionOut'); out.textContent='מריץ...'; const r=await api('/api/actions/'+name,{method:'POST'}); out.textContent=r.output || ('הסתיים בקוד '+r.code); await load('dashboard'); }
-function requirements(){ app.innerHTML='<h2>דרישות</h2><div class="toolbar"><input id="q" placeholder="חיפוש"><select id="type"><option value="">כל הסוגים</option>'+[...new Set(state.requirements.map(r=>r.type))].map(t=>'<option>'+t+'</option>').join('')+'</select><select id="origin"><option value="">כל המקורות</option><option value="auto">auto</option><option value="manual">manual</option></select></div><div id="reqTable"></div>'; const draw=()=>{const q=document.getElementById('q').value; const type=document.getElementById('type').value; const origin=document.getElementById('origin').value; const rows=state.requirements.filter(r=>(!type||r.type===type)&&(!origin||(r.origin||'manual')===origin)&&JSON.stringify(r).includes(q)); document.getElementById('reqTable').innerHTML=table(['ID','סוג','מקור','סטטוס','עדיפות','כותרת','בדיקות מקושרות'], rows.map(r=>[r.id,r.type,r.origin||'manual',r.status,'<span class="badge '+r.priority+'">'+r.priority+'</span>',esc(r.title),state.tests.filter(t=>t.requirementIds.includes(r.id)).map(t=>t.id).join(', ')]));}; document.getElementById('q').oninput=draw; document.getElementById('type').onchange=draw; document.getElementById('origin').onchange=draw; draw(); }
-function tests(){ app.innerHTML='<h2>בדיקות</h2>'+table(['ID','כותרת','דרישות','מקור','סוג','עדיפות','סטטוס','Expected','Actual'], state.tests.map(t=>[t.id,esc(t.title),t.requirementIds.join(', '),t.origin||'manual',t.type,'<span class="badge '+t.priority+'">'+t.priority+'</span>',t.status,(t.expectedResults||[]).join('<br>'),esc(t.actualResults)])); }
-function runs(){ app.innerHTML='<h2>הרצות בדיקה</h2>'+table(['תאריך','סטטוס','עברו','נכשלו','משך'], state.runs.map(r=>[r.startedAt,r.status,r.passed,r.failed,(r.durationMs||0)+'ms'])); }
-function trace(){ const uncovered=state.requirements.filter(r=>!state.tests.some(t=>t.requirementIds.includes(r.id))); const orphan=state.tests.filter(t=>!t.requirementIds?.length); app.innerHTML='<h2>Traceability Matrix</h2><div class="cards"><div class="card"><h3>דרישות ללא בדיקות</h3><div class="metric">'+uncovered.length+'</div></div><div class="card"><h3>בדיקות ללא דרישה</h3><div class="metric">'+orphan.length+'</div></div></div><div class="matrix">'+table(['דרישה','בדיקות'], state.requirements.map(r=>[r.id+' - '+esc(r.title), state.tests.filter(t=>t.requirementIds.includes(r.id)).map(t=>t.id).join(', ') || '<span class="missing">אין</span>']))+'</div>'; }
-function coverage(){ const c=state.coverage; app.innerHTML='<h2>כיסוי</h2><section class="cards"><div class="card"><h3>כיסוי דרישות</h3><div class="metric">'+c.requirements.percent+'%</div></div><div class="card"><h3>כיסוי קבצים</h3><div class="metric">'+c.files.percent+'%</div></div><div class="card"><h3>קבצים סרוקים</h3><div class="metric">'+c.files.total+'</div></div></section><section class="panel"><h3>קבצים ללא כיסוי</h3><pre>'+esc((c.files.uncoveredFiles||[]).join('\n'))+'</pre></section>'; }
-function reports(){ app.innerHTML='<h2>דוחות</h2><div class="panel"><p>הפק דוח PDF מלא לתיקיית reports/pdf ודוח JSON לתיקיית reports/json.</p><button data-run="report">צור דוח PDF</button><pre id="actionOut"></pre></div>'; }
-function table(headers, rows){ return '<table><thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map((c,i)=>'<td data-label="'+headers[i]+'">'+(c??'')+'</td>').join('')+'</tr>').join('')+'</tbody></table>'; }
-load().catch(e=>{app.innerHTML='<pre>'+esc(e.stack||e.message)+'</pre>';});
+import { bindShellEvents, shell, toast } from "./components.js";
+import { initRouter } from "./router.js";
+import { loadAll, runAction, state, subscribe } from "./state.js";
+import { dashboardView } from "./views/dashboard.js";
+import { placeholderView } from "./views/placeholder-view.js";
+
+const root = document.getElementById("app");
+
+function loadingView() {
+  return `
+    <div class="qa-boot">
+      <div class="qa-skeleton"></div>
+      <p>טוען נתוני QA...</p>
+    </div>
+  `;
+}
+
+function errorView(message) {
+  return `
+    <section class="qa-empty">
+      <div>
+        <h1>טעינת הנתונים נכשלה</h1>
+        <p>${message || "אירעה שגיאה לא צפויה."}</p>
+        <button class="qa-button" data-action="reload">נסה שוב</button>
+      </div>
+    </section>
+  `;
+}
+
+function currentView(appState) {
+  if (appState.route === "dashboard") return dashboardView(appState);
+  return placeholderView(appState.route, appState);
+}
+
+function render(appState) {
+  if (appState.loading && !appState.summary) {
+    root.innerHTML = loadingView();
+    return;
+  }
+  if (appState.error && !appState.summary) {
+    root.innerHTML = errorView(appState.error);
+    bindActions(root);
+    return;
+  }
+  root.innerHTML = shell(currentView(appState), appState);
+  bindShellEvents(root);
+  bindActions(root);
+}
+
+function actionLabel(name) {
+  return {
+    sync: "סנכרון",
+    scan: "סריקה",
+    test: "הרצת בדיקות",
+    report: "יצירת PDF",
+    all: "הרצת הכול",
+    "open-report": "פתיחת דוח אחרון",
+  }[name] || name;
+}
+
+async function executeAction(name) {
+  if (state.action) return;
+  if (name === "reload") {
+    await loadAll();
+    return;
+  }
+  if (name === "open-report") {
+    toast("פתיחת דוח אחרון תתווסף לאחר endpoint דוחות ב-Wave הבא", "info");
+    return;
+  }
+  try {
+    toast(`${actionLabel(name)} התחיל...`);
+    const result = await runAction(name);
+    const output = document.getElementById("actionOutput");
+    if (output && result?.output) {
+      output.hidden = false;
+      output.textContent = result.output.slice(-8000);
+    }
+    if (Number(result?.code || 0) === 0) {
+      toast(`${actionLabel(name)} הסתיים בהצלחה`, "success");
+    } else {
+      toast(`${actionLabel(name)} הסתיים עם קוד ${result.code}`, "error");
+    }
+  } catch (error) {
+    toast(error.message || "הפעולה נכשלה", "error");
+  }
+}
+
+function bindActions(host) {
+  host.querySelectorAll("[data-action]").forEach((button) => {
+    button.addEventListener("click", () => executeAction(button.dataset.action));
+  });
+  host.querySelectorAll("[data-run-output]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const run = (state.testRuns || []).find((item) => item.id === button.dataset.runOutput);
+      if (!run?.output) {
+        toast("לא נמצא פלט להרצה זו", "error");
+        return;
+      }
+      const output = document.getElementById("actionOutput");
+      if (output) {
+        output.hidden = false;
+        output.textContent = run.output.slice(-8000);
+        output.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        toast("פלט ההרצה יוצג במסך Dashboard", "info");
+      }
+    });
+  });
+}
+
+subscribe(render);
+initRouter();
+loadAll();

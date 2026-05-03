@@ -1,1 +1,19 @@
-<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>מערכת QA מקומית</title><link rel="stylesheet" href="css/styles.css"></head><body><header class="top"><div><h1>מערכת QA מקומית לאתר הקורס</h1><p>ניהול דרישות, בדיקות, עקיבות, כיסוי ודוחות PDF - ללא Firebase.</p></div><nav><button data-view="dashboard">Dashboard</button><button data-view="requirements">דרישות</button><button data-view="tests">בדיקות</button><button data-view="runs">הרצות</button><button data-view="trace">Traceability</button><button data-view="coverage">כיסוי</button><button data-view="reports">דוחות</button></nav></header><main id="app"></main><script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA System | מערכת בדיקות מקומית</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app" class="qa-app" aria-live="polite">
+    <div class="qa-boot">
+      <div class="qa-skeleton"></div>
+      <p>טוען את מערכת ה-QA...</p>
+    </div>
+  </div>
+  <div id="toastRoot" class="qa-toast-root" aria-live="assertive"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
